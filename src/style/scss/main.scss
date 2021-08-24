@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,body {
+    font-size: 18px;
+
+
+
+}
+
+#root {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 42px auto ;
+    grid-template-areas: 
+        'sidebar header header'
+        'sidebar content content'
+    ;
+}
+button {
+    border-style: none;
+    background: none;
+    padding: 2em 2em;
+    box-shadow: 0 3px 5px rgba($color: #000000, $alpha: 0.1);
+    cursor: pointer;
+
+    color: #EEE;
+}
+
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #444;
+    color: #EEE;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    flex-basis: 1;
+    text-align: center;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    h6 {
+        min-height: 42px;
+        display: grid;
+        place-content: center;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    padding: 0 1em;
+    position: sticky;
+    top: 0;
+    background-color: #444;
+    color: #EEE;
+}
+
+.content {
+    grid-area: content;
+    color: #444;
+    background-color: #DDD;
+    padding: 1em;
+}
+.section-content {
+    min-height: calc(100vh - 42px - 2em);
+
+    .title {
+        text-align: center;
+        margin-bottom: 0.5em;
+    }
+
+}
+ul {
+    list-style: none;
+}
+
+.list-button {
+    button {
+        width: 100%;
+        color: #444;
+    }
+    // border: #444 1px solid;
+    border-radius: 0.5em;
+    padding-bottom: 5em;
+
+}
+
+.list-coins {
+    display: flex;
+    align-items: center;
+    background-color: #EEE;
+
+    padding: 1em;
+    img {
+        margin-right: 1em;
+    }
+    h2 {
+        margin-right: 1em;
+    }
+
+    &:first-child {
+        border-top-right-radius: 1em;
+        border-top-left-radius: 1em;
+    }
+    &:nth-last-child(2) {
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+    }
+
+
+    &:not(:last-child) {
+        // margin-bottom: 0.3em;
+    }
+}
