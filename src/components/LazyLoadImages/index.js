@@ -47,7 +47,7 @@ const LazyImage = () => {
 
     return (
     <div className="section-content flex-column">
-      <h2 className="title">Lazy load images</h2>
+      <h2 className="title">Lazy load images (Blur effect)</h2>
 
       {images.map((image) => (
         <Image key={image.alt} data_src={image.src} src={image["data-src"]} alt={image.alt} />
