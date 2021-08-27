@@ -110,4 +110,18 @@ ul {
   border-bottom-right-radius: 1em;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-column img {
+  margin: 0 auto;
+  margin-bottom: 1em;
+  width: 800px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 0.5em;
+  box-shadow: 0 5px 20px #49494921;
+}
+
 /*# sourceMappingURL=main.css.map */

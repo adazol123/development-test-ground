@@ -123,9 +123,20 @@ ul {
         border-bottom-left-radius: 1em;
         border-bottom-right-radius: 1em;
     }
+}
 
+.flex-column {
+    display: flex;
+    flex-direction: column;
 
-    &:not(:last-child) {
-        // margin-bottom: 0.3em;
+    img{
+        margin: 0 auto;
+        margin-bottom: 1em;
+        width: 800px;
+        height: 400px;
+        object-fit: cover;
+        
+        border-radius: 0.5em;
+        box-shadow: 0 5px 20px #49494921;
     }
 }

@@ -23,6 +23,9 @@ function App() {
           <NavLink to='/infinite-scroll'>
               <button>Infinite Scroll</button>
           </NavLink>        
+          <NavLink to='/lazy-image'>
+              <button>Lazy Load Images</button>
+          </NavLink>        
       </div>
 
       <section className="content">
